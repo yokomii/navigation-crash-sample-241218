@@ -72,7 +72,7 @@ class MainActivity : ComponentActivity() {
                         LaunchedEffect(Unit) {
                             /*
                              * step3: Wait for stop at breakpoint `androidx.navigation.NavController#pop`.
-                             * step4: After stopping at a breakpoint, press the back key.
+                             * step4: After stopping at a breakpoint, perform a back gesture.
                              */
                             navController.navigate(Routes.RouteB.name) {
                                 popUpTo(Routes.RouteA.SCREEN_A_1)
